@@ -10,7 +10,7 @@ public class Node {
 		neighbours = new LinkedList();
 	}
 	public void addNeighbour(Node to, int weight){
-		neighbours.add(new Edge(to, weight));
+		neighbours.add(new Edge(this, to, weight));
 	}
 	public void setLabel(String key, Integer data){
 		labels.put(key, data);
