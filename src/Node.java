@@ -3,7 +3,7 @@ import java.util.LinkedList;
 public class Node {
 	public int data;
 	public LinkedList<Edge> neighbours;
-	private HashMap<String, Integer> labels;
+	public HashMap<String, Integer> labels;
 	public Node(int data){
 		this.data = data;
 		labels = new HashMap();

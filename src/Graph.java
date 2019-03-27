@@ -63,6 +63,9 @@ public class Graph{
 			for(Edge edge : neighbours(data)){
 				System.out.print(edge.to.data + " (" + edge.weight + "), ");
 			}
+			for(String label : getNode(data).labels.keySet()){
+				System.out.print(label + ": " + getNode(data).getLabel(label) + ", ");
+			}
 			System.out.println();
 		}
 	}
